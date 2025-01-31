@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class JoinPom {
+	@FindBy(xpath = "new UiSelector().className(\"android.widget.ImageView\")")
+	public WebElement Logo;
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"JOIN\"]")
 	public WebElement JoinButton;
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"com.android.permissioncontroller:id/permission_deny_button\"]")
@@ -32,6 +34,9 @@ public class JoinPom {
 	public JoinPom(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		}
+	public WebElement Logo() {
+		return Logo;
+	}
 	public WebElement JoinButton() {
 		return JoinButton;
 	}

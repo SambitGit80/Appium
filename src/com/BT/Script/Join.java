@@ -16,9 +16,9 @@ import com.BT.Pom.JoinPom;
 public class Join extends Base {
 	
 	@Test
-	public void Joining() throws InterruptedException {
+	public void TC_001() throws InterruptedException {
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-  //  WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+	
     JoinPom j=new JoinPom(driver);
     Thread.sleep(3000);
     wait.until(ExpectedConditions.visibilityOf(j.JoinButton()));
