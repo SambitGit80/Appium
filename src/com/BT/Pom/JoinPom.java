@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class JoinPom {
-	@FindBy(xpath = "new UiSelector().className(\"android.widget.ImageView\")")
+	@FindBy(xpath = "//android.widget.ImageView")
 	public WebElement Logo;
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"JOIN\"]")
 	public WebElement JoinButton;

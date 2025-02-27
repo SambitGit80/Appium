@@ -17,16 +17,15 @@ public class Join extends Base {
 	
 	@Test
 	public void TC_001() throws InterruptedException {
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	
     JoinPom j=new JoinPom(driver);
-    Thread.sleep(3000);
+    
     wait.until(ExpectedConditions.visibilityOf(j.JoinButton()));
     j.JoinButton().click();
    Assert.assertTrue(j.DontAllow().isDisplayed(),"clicked");
    wait.until(ExpectedConditions.elementToBeClickable(j.WhileUsingtheapp()));
    j.WhileUsingtheapp().click();
-   
+    
    wait.until(ExpectedConditions.visibilityOf(j.fn())).sendKeys("AppTest");
    wait.until(ExpectedConditions.visibilityOf(j.ln())).sendKeys("Automation");
    wait.until(ExpectedConditions.elementToBeClickable(j.PhonenoDrop())).click(); 
@@ -36,6 +35,8 @@ public class Join extends Base {
    wait.until(ExpectedConditions.visibilityOf(j.PhoneText())).sendKeys("8095886325");
    wait.until(ExpectedConditions.visibilityOf(j.email())).sendKeys("test@gmail.com");
    wait.until(ExpectedConditions.elementToBeClickable(j.jointheButton())).click();
+   
+   
    
 }
 }

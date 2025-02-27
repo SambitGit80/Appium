@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-31T17:21:57 IST" name="Default suite" finished-at="2025-01-31T17:22:25 IST" duration-ms="27870">
+  <suite started-at="2025-02-06T13:30:08 IST" name="Default suite" finished-at="2025-02-06T13:30:34 IST" duration-ms="25921">
     <groups>
     </groups>
-    <test started-at="2025-01-31T17:21:57 IST" name="Default test" finished-at="2025-01-31T17:22:25 IST" duration-ms="27870">
-      <class name="com.BT.Script.Login">
-        <test-method is-config="true" signature="test()[pri:0, instance:com.BT.Script.Login@3590fc5b]" started-at="2025-01-31T17:21:57 IST" name="test" finished-at="2025-01-31T17:22:03 IST" duration-ms="5449" status="PASS">
+    <test started-at="2025-02-06T13:30:08 IST" name="Default test" finished-at="2025-02-06T13:30:34 IST" duration-ms="25921">
+      <class name="com.BT.Script.Join_Initial">
+        <test-method is-config="true" signature="OpenApp()[pri:0, instance:com.BT.Script.Join_Initial@515c6049]" started-at="2025-02-06T13:30:08 IST" name="OpenApp" finished-at="2025-02-06T13:30:14 IST" duration-ms="5695" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="Login()[pri:0, instance:com.BT.Script.Login@3590fc5b]" started-at="2025-01-31T17:22:03 IST" name="Login" finished-at="2025-01-31T17:22:25 IST" duration-ms="22402" status="PASS">
+        </test-method> <!-- OpenApp -->
+        <test-method signature="TC_001()[pri:0, instance:com.BT.Script.Join_Initial@515c6049]" started-at="2025-02-06T13:30:14 IST" name="TC_001" finished-at="2025-02-06T13:30:19 IST" duration-ms="4980" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-      </class> <!-- com.BT.Script.Login -->
+        </test-method> <!-- TC_001 -->
+        <test-method signature="TC_002()[pri:0, instance:com.BT.Script.Join_Initial@515c6049]" started-at="2025-02-06T13:30:19 IST" name="TC_002" finished-at="2025-02-06T13:30:34 IST" duration-ms="15223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002 -->
+        <test-method is-config="true" signature="CloseApp()[pri:0, instance:com.BT.Script.Join_Initial@515c6049]" started-at="2025-02-06T13:30:34 IST" name="CloseApp" finished-at="2025-02-06T13:30:34 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseApp -->
+      </class> <!-- com.BT.Script.Join_Initial -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

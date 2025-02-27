@@ -19,7 +19,7 @@ public class Login extends Base{
 		JoinPom p=new JoinPom(driver);
 		wait.until(ExpectedConditions. elementToBeClickable(p.WhileUsingtheapp())).click();		
 		wait.until(ExpectedConditions.visibilityOf(p.PhoneText())).sendKeys("8095886325");
-		wait.until(ExpectedConditions.elementToBeClickable(l.SendCode())).click();
+		wait.until(ExpectedConditions.elementToBeClickable(l.SendCode())).click(); 
 		wait.until(ExpectedConditions.visibilityOf(l.OTP1())).sendKeys("1");
 		wait.until(ExpectedConditions.visibilityOf(l.OTP2())).sendKeys("2");
 		wait.until(ExpectedConditions.visibilityOf(l.OTP3())).sendKeys("3");

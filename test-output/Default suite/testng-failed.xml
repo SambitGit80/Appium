@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.BT.Script.Login">
+      <class name="com.BT.Script.Join_Initial">
         <methods>
-          <include name="Login"/>
-          <include name="test"/>
+          <include name="OpenApp"/>
+          <include name="CloseApp"/>
+          <include name="TC_002"/>
         </methods>
-      </class> <!-- com.BT.Script.Login -->
+      </class> <!-- com.BT.Script.Join_Initial -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -30,6 +30,7 @@ public class LoginPOM {
     public WebElement Dontallow;
     @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"CLOSE\"]")
     public WebElement Close;
+    
 	public LoginPOM(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		}

@@ -14,6 +14,8 @@ import org.openqa.selenium.remote.HttpCommandExecutor;
 import org.openqa.selenium.remote.RemoteWebDriver;import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.reporters.jq.Main;
@@ -31,13 +33,12 @@ public class Base {
 	public static int time500=500;
 	public static int time1000=1000;
 	public AndroidDriver driver;
-	public WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
-	//public static AppiumDriver driver;
+	public WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(40));
 	
 public String Url="http://127.0.0.1:4723/";
 
 @BeforeTest
-public void test() throws MalformedURLException, InterruptedException {
+public void OpenApp() throws MalformedURLException, InterruptedException {
 
 	   UiAutomator2Options capabilities=new UiAutomator2Options();
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
@@ -48,7 +49,9 @@ public void test() throws MalformedURLException, InterruptedException {
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), capabilities);
         
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        
-      
+}
+@AfterTest
+public void CloseApp() {
+	
 }
 }
